@@ -18,7 +18,7 @@
       crossorigin="anonymous"
     ></script>
     <link href="{% static 'css/style.css' %}" rel="stylesheet"  />
-    <link rel="icon" href="static/image/logoCS.png" type="image/x-icon" />
+    <link rel="icon" href="{% static 'image/logoCS.png' %}" type="image/x-icon" />
   </head>
   <body id="page-top">
     <header>
@@ -652,6 +652,6 @@
       <!--no tuch-->
       {% endblock footers %}
     </main>
-    <script src="static\js\javascript.js"></script>
+    <script src="{% static 'js/javascript.js' %}"></script>
   </body>
 </html>
