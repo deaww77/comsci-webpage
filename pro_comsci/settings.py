@@ -55,7 +55,7 @@ ROOT_URLCONF = 'pro_comsci.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "templates")],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,7 +120,7 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_bilud', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static', 'static')
 
 MEDIA_URL = '/medai/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
